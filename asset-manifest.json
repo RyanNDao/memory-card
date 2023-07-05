@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7e705289.css",
+    "main.js": "/static/js/main.fcefa694.js",
+    "static/media/homelander.jpg": "/static/media/homelander.9ae4f650782dfe3c58c1.jpg",
+    "static/media/frenchie.jpg": "/static/media/frenchie.3dd6f680af59cca14a4d.jpg",
+    "static/media/starlight.jpeg": "/static/media/starlight.9b1a958cb9c7715622f3.jpeg",
+    "static/media/queen-maeve.jpg": "/static/media/queen-maeve.b96ed49c361e0b83dd63.jpg",
+    "static/media/a-train.jpg": "/static/media/a-train.d4bf927b953955b9ab66.jpg",
+    "static/media/butcher.jpg": "/static/media/butcher.118a42b4456614c42040.jpg",
+    "static/media/hughie.jpeg": "/static/media/hughie.c6a91beca47ee78e658f.jpeg",
+    "index.html": "/index.html",
+    "main.7e705289.css.map": "/static/css/main.7e705289.css.map",
+    "main.fcefa694.js.map": "/static/js/main.fcefa694.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e705289.css",
+    "static/js/main.fcefa694.js"
+  ]
+}
