@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function GameOverlay({bestScore, startGame, cardsClicked, cards, wrongCard}){
+export default function GameOverlay({bestScore, startGame, cardsClicked, wrongCard}){
     return (
         <div className="overlay">
             <div className="game-end">
@@ -12,14 +12,13 @@ export default function GameOverlay({bestScore, startGame, cardsClicked, cards, 
                     </div>
                 }
                 <ul>
-                    {(cardsClicked.length !== cards.length)  ? (bestScore === 0 ? null : "Game over! You clicked all these cards:") : "You won! You clicked on all of the cards:"}
+                    {wrongCard || bestScore === 0 ? (bestScore === 0 ? null : "Game over! You clicked all these cards:") : "You won! You clicked on all of the cards:"}
                     {
                         cardsClicked.map((cardName)=>{
                             return <li className={cardName === wrongCard ? 'wrong-card' : ''} key={cardName}>{cardName}</li>
                         })
                     }
                 </ul>
-                <p className="best-score">Best Score: {bestScore}</p>
                 <label htmlFor="difficulty">Select Difficulty:</label>
                 <select name="difficulty" id="difficulty">
                     <option value="easy">Easy</option>
@@ -27,6 +26,7 @@ export default function GameOverlay({bestScore, startGame, cardsClicked, cards, 
                     <option value="hard">Hard</option>
                 </select>
                 <button className="start-game" onClick={startGame}>{bestScore === 0 ? "Start Game!" : "Play Again!"}</button>
+                <p className="best-score">Best Score: {bestScore}</p>
             </div>
         </div>
     )

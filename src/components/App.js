@@ -2,7 +2,7 @@ import '../App.css';
 import { useState, createContext, useEffect } from 'react';
 import Header from './Header'
 import Game from './Game';
-import { Homelander, Butcher, QueenMaeve, Hughie, Frenchie, Starlight, A_Train } from '../images/card-images.js';
+import { Homelander, Butcher, QueenMaeve, Hughie, Frenchie, Starlight, A_Train, Kimiko, Deep, Black_Noir, Mothers_Milk, Stan_Edgar } from '../images/card-images.js';
 import GameOverlay from './GameOverlay';
 
 export const GameContext = createContext(null);
@@ -16,9 +16,11 @@ export default function App() {
 	const [wrongCard, setWrongCard] = useState('');
 	const [difficulty, setDifficulty] = useState('');
 
+	
+
 	useEffect(()=>{
 		setCards(cardsList)
-	},[difficulty])
+	},[gameOver])
 
 
 	const handleCardClick = (e) => {
@@ -28,7 +30,6 @@ export default function App() {
 			setScore(score + 1);
 			if (score + 1 > bestScore){
 				setBestScore(score+1);
-				
 			}
 			if (score+1 === cards.length){
 				setGameOver(true);
@@ -65,17 +66,17 @@ export default function App() {
 		<div className="app-container">
 			<Header score={score} bestScore={bestScore}/>
 			{!gameOver && <Game cards={cards} shuffleCards={shuffleCards} difficulty={difficulty} setCards={setCards}/>}
-			{gameOver && <GameOverlay startGame={startGame} bestScore={bestScore} cardsClicked={cardsClicked} cards={cards} wrongCard={wrongCard}/>}
+			{gameOver && <GameOverlay startGame={startGame} bestScore={bestScore} cardsClicked={cardsClicked} wrongCard={wrongCard}/>}
 		</div>
 		
 		</GameContext.Provider>
 	);
 }
 
-const cardsList = [
+export const cardsList = [
 	{
 		name: 'Homelander',
-		text: 'The most powerful hero in The Seven, albeit a little psychotic',
+		text: 'The captain of The Seven and the most powerful supe, albeit a little psychotic',
 		src: Homelander
 	},
 	{
@@ -90,22 +91,47 @@ const cardsList = [
 	},
 	{
 		name: 'Hughie Campbell',
-		text: 'The main character of the series who is on a mission for revenge',
+		text: 'The main character of the series who is on a mission of revenge',
 		src: Hughie
 	},
 	{
 		name: 'Frenchie',
-		text: 'The hopeless romantic of The Boys, searching for his own purpose in another',
+		text: 'The hopeless romantic member of The Boys, searching for his own purpose in another',
 		src: Frenchie
 	},
 	{
 		name: 'Starlight',
-		text: 'The good-intentioned love interest of Hughie Campbell',
+		text: 'The good-intentioned love interest of Hughie Campbell and double-agent of The Seven ',
 		src: Starlight
 	},
 	{
 		name: 'A-Train',
-		text: 'The self-serving speedy member of The Seven that kicked off the events of the series',
+		text: 'The self-serving speedster of The Seven that kicked off the events of the series',
 		src: A_Train
 	},
+	{
+		name: 'Kimiko Miyashiro',
+		text: 'The kidnapped and mute fugitive who slowly learns that her strength does not come from her powers',
+		src: Kimiko
+	},
+	{
+		name: 'The Deep',
+		text: 'Token fish guy',
+		src: Deep
+	},
+	{
+		name: 'Black Noir',
+		text: 'The silent but deadly assassin of The Seven whose loyalty lies with Homelander',
+		src: Black_Noir
+	},
+	{
+		name: 'Mother\'s Milk',
+		text: 'The moral compass who promised to exact revenge on the one who murdered his father',
+		src: Mothers_Milk
+	},
+	{
+		name: 'Stan Edgar',
+		text: 'The executive of Vought with a frightening presence',
+		src: Stan_Edgar
+	}
 ]

@@ -6,13 +6,12 @@ export default function Game({cards, shuffleCards, difficulty, setCards}){
 		shuffleCards();
         console.log(difficulty, cards)
         if (difficulty === 'easy'){
-            setCards(cards.slice(0,3))
+            setCards(cards.slice(0,6))
         } else if (difficulty === 'medium'){
-            setCards(cards.slice(0,5))
+            setCards(cards.slice(0,9))
         } else if (difficulty === 'hard'){
-            setCards(cards.slice(0,7))
+            setCards(cards.slice(0,12))
         }
-        
 	},[])
 
     
