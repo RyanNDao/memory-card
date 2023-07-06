@@ -1,20 +1,25 @@
 {
   "files": {
-    "main.css": "/memory-card/static/css/main.7e705289.css",
-    "main.js": "/memory-card/static/js/main.47473034.js",
+    "main.css": "/memory-card/static/css/main.f988f5ad.css",
+    "main.js": "/memory-card/static/js/main.84dafc40.js",
+    "static/media/black-noir.jpeg": "/memory-card/static/media/black-noir.d6b6749b573bad909c56.jpeg",
+    "static/media/deep.jpg": "/memory-card/static/media/deep.ca7e96316b7f1dc0a063.jpg",
+    "static/media/stan-edgar.png": "/memory-card/static/media/stan-edgar.44876c25eaca3c71d1b3.png",
     "static/media/homelander.jpg": "/memory-card/static/media/homelander.9ae4f650782dfe3c58c1.jpg",
+    "static/media/kimiko.jpeg": "/memory-card/static/media/kimiko.02fa32b5196e28fb0e68.jpeg",
     "static/media/frenchie.jpg": "/memory-card/static/media/frenchie.3dd6f680af59cca14a4d.jpg",
     "static/media/starlight.jpeg": "/memory-card/static/media/starlight.9b1a958cb9c7715622f3.jpeg",
     "static/media/queen-maeve.jpg": "/memory-card/static/media/queen-maeve.b96ed49c361e0b83dd63.jpg",
     "static/media/a-train.jpg": "/memory-card/static/media/a-train.d4bf927b953955b9ab66.jpg",
     "static/media/butcher.jpg": "/memory-card/static/media/butcher.118a42b4456614c42040.jpg",
+    "static/media/mothers-milk.jpg": "/memory-card/static/media/mothers-milk.a0aa5546fc67ce810355.jpg",
     "static/media/hughie.jpeg": "/memory-card/static/media/hughie.c6a91beca47ee78e658f.jpeg",
     "index.html": "/memory-card/index.html",
-    "main.7e705289.css.map": "/memory-card/static/css/main.7e705289.css.map",
-    "main.47473034.js.map": "/memory-card/static/js/main.47473034.js.map"
+    "main.f988f5ad.css.map": "/memory-card/static/css/main.f988f5ad.css.map",
+    "main.84dafc40.js.map": "/memory-card/static/js/main.84dafc40.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e705289.css",
-    "static/js/main.47473034.js"
+    "static/css/main.f988f5ad.css",
+    "static/js/main.84dafc40.js"
   ]
 }
