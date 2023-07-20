@@ -8,7 +8,7 @@ export default function GameOverlay({bestScore, startGame, cardsClicked, wrongCa
                     bestScore === 0 && 
                     <div className="instructions-container">
                     <h1>Instructions:</h1>
-                    <p>A quick fun game to test your memory! The game ends when you click on a card that was already clicked! Don't repeat cards!</p>
+                    <p>A quick fun game to test your memory! The game ends when you click on a card that was already clicked! Don't repeat cards! FYI: Difficulty does not work in production</p>
                     </div>
                 }
                 <ul>
